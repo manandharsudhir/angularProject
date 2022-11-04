@@ -1,0 +1,10 @@
+img{
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 16px;
+    object-position: top;
+}
+
+.textArea{
+    margin: auto;
+}

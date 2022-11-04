@@ -1,0 +1,17 @@
+<div class="calculator d-flex flex-column justify-content-center align-items-center">
+    <form (ngSubmit)="onSubmit()">
+        <input class="form-control" type="number" name="input1" id="input1" [(ngModel)]="input1"><br>
+        <input class="form-control"type="number" name="input2" id="input2" [(ngModel)]="input2"><br>
+        <select class="form-control" name="operation" id="exampleFormControlSelect1" [(ngModel)]="operation">
+            <option>Add</option>
+            <option>Multiply</option>
+            <option>Subtract</option>
+            <option>Divide</option>
+          </select>
+          <br>
+        <button type="submit" class="btn btn-primary"> Calculate </button>
+    </form>
+    <div class="m-3"></div>
+    <h2>Result:</h2>
+    <h5>{{output}}</h5>
+</div>
